@@ -3,7 +3,9 @@ import { connectDB } from './config/db.js';
 import { User } from './model/user.js';
 import cors from 'cors';
 import { form } from './model/form.js';
+import dotnev from 'dotenv'
 
+dotnev.config();
 const app=express();
 
 connectDB();
